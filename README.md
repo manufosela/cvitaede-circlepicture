@@ -1,6 +1,7 @@
 # \<cvitaede-circlepicture\>
 
-
+##DEMO
+[Codepen Demo](http://codepen.io/manufosela/pen/RoRBrV)
 
 ## Install the Polymer-CLI
 
