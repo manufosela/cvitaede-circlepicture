@@ -24,6 +24,7 @@
       min-height: 200px;
       border-radius: 50%;
       border: 3px solid #F00;
+      overflow: hidden;
     }
     
      :host img {
@@ -37,8 +38,8 @@
 
     </style>
     <div class="container">
-      <div class="imgcont">
-        <img src="{{picture}}" width="{{size}}" height="{{size}}" />
+      <div class="imgcont" style$="width:{{size}}px; height:{{size}}px">
+        <img src="{{picture}}" width="{{size}}" />
       </div>
       <h2>{{title}}</h2>
       <h3>{{subtitle}}</h3>
@@ -69,7 +70,7 @@
       }
     },
     attached: function() {
-      console.log(this.size);
+      //console.log(this.size);
     }
 
   });
