@@ -1,39 +1,33 @@
-# \<cvitaede-circlepicture\>
+# cvitaede-circlepicture [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/manufosela/cvitaede-circlepicture)
 
 ##DEMO
 [Codepen Demo](http://codepen.io/manufosela/pen/RoRBrV)
 
-## Install the Polymer-CLI
+Polymer web component configurable to show an image in a circle with title and subtitle.
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
+## Demo
 
-## Viewing Your Application
+[cvitaede-circlepicture Demo](http://codepen.io/manufosela/pen/RoRBrV)
 
+<!---
 ```
-$ polymer serve
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="cvitaede-circlepicture.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
 ```
-
-## Building Your Application
-
-```
-$ polymer build
-```
-
-This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
-containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
-CSS, and JS optimizers.
-
-You can serve the built versions by giving `polymer serve` a folder to serve
-from:
-
-```
-$ polymer serve build/bundled
+-->
+```html
+<cvitaede-circlepicture size="250" picture="https://github.com/manufosela/cvitaede-circlepicture/blob/master/demo/img/fake2.png?raw=true" title="Hello everybody!" subtitle="I'm a picture"></cvitaede-circlepicture>
 ```
 
-## Running Tests
+## Author
 
-```
-$ polymer test
-```
+* **Mánu Fosela** - *Javascript Composer* - [manufosela](https://github.com/manufosela)
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
