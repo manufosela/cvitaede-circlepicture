@@ -1,42 +1,43 @@
-<link rel="import" href="./bower_components/polymer/polymer.html">
-
 <dom-module id="cvitaede-circlepicture">
   <template>
-    <style>
-     :host {
-      display: block;
-    }
-    
-     :host .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-     :host .imgcont {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 400px;
-      min-width: 200px;
-      max-height: 400px;
-      min-height: 200px;
-      border-radius: 50%;
-      border: 3px solid #F00;
-      overflow: hidden;
-    }
-    
-     :host img {
-      border-radius: 50%;
-    }
-    
-     :host h2,
-     :host h3 {
-      margin: .2em;
-    }
+    <custom-style>
+      <style>
+        :host {
+          display: block;
+        }
+        
+        :host .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        :host .imgcont {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 400px;
+          min-width: 200px;
+          max-height: 400px;
+          min-height: 200px;
+          border-radius: 50%;
+          border: 3px solid #F00;
+          overflow: hidden;
+        }
+        
+        :host img {
+          border-radius: 50%;
+        }
+        
+        :host h2,
+        :host h3 {
+          margin: .2em;
+        }
 
-    </style>
+      </style>
+    </custom-style>
+
     <div class="container">
       <div class="imgcont" style$="width:{{size}}px; height:{{size}}px">
         <img src="{{picture}}" width="{{size}}" />
@@ -47,33 +48,43 @@
   </template>
 
   <script>
-  Polymer({
+    class CvitaedeCirclepicture extends Polymer.Element {
+      static get is() { return 'cvitaede-circlepicture'; }
 
-    is: 'cvitaede-circlepicture',
-
-    properties: {
-      picture: {
-        type: String,
-        value: '',
-      },
-      size: {
-        type: Number,
-        value: 200
-      },
-      title: {
-        type: String,
-        value: 'FAKE TITLE'
-      },
-      subtitle: {
-        type: String,
-        value: 'Fake Subtitle'
+      static get properties() {
+        return {
+          picture: {
+            type: String,
+            value: '',
+          },
+          size: {
+            type: Number,
+            value: 200
+          },
+          title: {
+            type: String,
+            value: 'FAKE TITLE'
+          },
+          subtitle: {
+            type: String,
+            value: 'Fake Subtitle'
+          }
+        };
       }
-    },
-    attached: function() {
-      //console.log(this.size);
+      
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+      }
+
+      disconeectedCallback() {
+        super.disconeectedCallback();
+      }
     }
 
-  });
-
+    window.customElements.define(CvitaedeCirclepicture.is, CvitaedeCirclepicture);
   </script>
 </dom-module>
