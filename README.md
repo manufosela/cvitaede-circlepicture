@@ -1,6 +1,6 @@
 # cvitaede-circlepicture [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/manufosela/cvitaede-circlepicture)
 
-##DEMO
+#DEMO
 [Codepen Demo](http://codepen.io/manufosela/pen/RoRBrV)
 
 Polymer web component configurable to show an image in a circle with title and subtitle.
