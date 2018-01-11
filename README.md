@@ -1,4 +1,6 @@
-# cvitaede-circlepicture [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/manufosela/cvitaede-circlepicture)
+# cvitaede-circlepicture 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/manufosela/cvitaede-circlepicture)
+![Vaadin Directory availability](https://img.shields.io/badge/Vaadin%20Directory-available-green.svg?style=flat-square&colorB=00b4f0&link=https://vaadin.com/directory)
 
 ## Demo
 [Codepen Demo](http://codepen.io/manufosela/pen/RoRBrV)
